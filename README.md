@@ -14,3 +14,5 @@ Data mahasiswa dapat diurutkan berdasarkan IPK dan Penghasilan.
 Sistem menghitung skor beasiswa berdasarkan IPK, penghasilan orang tua dan jumlah tanggungan.
 ## penentuan Kelulusan
 Mahasiswa ditentukan diterima atau ditolak berdasarkan hasil perhitungan skor dan ranking.
+## Laporan Seleksi
+Sistem menyediakan statistik penerima beasiswa dan fitur export hasil seleksi ke file CSV.
