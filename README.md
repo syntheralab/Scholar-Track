@@ -8,3 +8,5 @@ Mahasiswa dapat melakukan registrasi menggunakan NIM, Nama, Password, IPK, pengh
 Tersedia login mahasiswa dan login admin menggunakan username dan password.
 ## CRUD Data Mahasiswa
 Admin dapat melihat, mencari dan menghapus data mahasiswa yang tersimpan di database SQLite.
+## Sorting Data
+Data mahasiswa dapat diurutkan berdasarkan IPK dan Penghasilan.
