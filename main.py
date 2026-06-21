@@ -1,4 +1,5 @@
 import sqlite3
+import csv
 
 def registrasi():
     print("Selamat Datang di Scholar-Track")
@@ -146,7 +147,8 @@ def menu_admin():
         print("8. Hapus Mahasiswa")
         print("9. Cari Mahasiswa")
         print("10. Statistik Beasiswa")
-        print("11. Logout")
+        print("11. Export CSV")
+        print("12. Logout")
 
         pilihan = input("Pilih Menu  : ")
 
@@ -181,6 +183,9 @@ def menu_admin():
             statistik_beasiswa()
 
         elif pilihan == "11":
+            export_csv()
+
+        elif pilihan == "12":
             print("Logout Berhasil")
             break
             
@@ -288,7 +293,7 @@ def lihat_penerima_beasiswa():
         nim = mahasiswa[0]
         nama = mahasiswa[1]
         skor = mahasiswa[2]
-        
+
         print("\n===== PENERIMA BEASISWA =====")
 
         print("NIM :", nim)
@@ -565,5 +570,31 @@ def sorting_penghasilan():
         print("--------------------")
 
         ranking += 1
+
+def export_csv():
+    conn = sqlite3.connect("scholar_track.db")
+    cursor = conn.cursor()
+
+    cursor.execute("""
+    SELECT nim, nama, ipk, skor_akhir, status_seleksi
+    FROM mahasiswa
+    """)
+
+    data_mahasiswa = cursor.fetchall()
+
+    with open("hasil_seleksi.csv", "w", newline="", encoding="utf-8") as file:
+
+        writer = csv.writer(file)
+
+        writer.writerow([
+            "NIM",
+            "Nama",
+            "IPK",
+            "Skor Akhir",
+            "Status Seleksi"
+        ])
+        writer.writerows(data_mahasiswa)
+    conn.close()
+    print("Export CSV berhasil!")
 
 menu_utama()
