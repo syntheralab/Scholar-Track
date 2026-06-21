@@ -10,3 +10,5 @@ Tersedia login mahasiswa dan login admin menggunakan username dan password.
 Admin dapat melihat, mencari dan menghapus data mahasiswa yang tersimpan di database SQLite.
 ## Sorting Data
 Data mahasiswa dapat diurutkan berdasarkan IPK dan Penghasilan.
+## Perhitungan Skor
+Sistem menghitung skor beasiswa berdasarkan IPK, penghasilan orang tua dan jumlah tanggungan.
