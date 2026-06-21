@@ -12,3 +12,5 @@ Admin dapat melihat, mencari dan menghapus data mahasiswa yang tersimpan di data
 Data mahasiswa dapat diurutkan berdasarkan IPK dan Penghasilan.
 ## Perhitungan Skor
 Sistem menghitung skor beasiswa berdasarkan IPK, penghasilan orang tua dan jumlah tanggungan.
+## penentuan Kelulusan
+Mahasiswa ditentukan diterima atau ditolak berdasarkan hasil perhitungan skor dan ranking.
