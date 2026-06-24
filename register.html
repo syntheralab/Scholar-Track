@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Registrasi Mahasiswa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+
+
+    <div class="container mt-5">
+
+        <div class="card shadow p-4">
+
+            <h1 class="text-primary mb-4">
+                📝 Registrasi Mahasiswa
+            </h1>
+
+            <form method="POST">
+
+                <div class="mb-3">
+                    <label>NIM</label>
+                    <input type="text" name="nim" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label>Nama</label>
+                    <input type="text" name="nama" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label>IPK</label>
+                    <input type="number" step="0.01" name="ipk" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label>Penghasilan Orang Tua</label>
+                    <input type="number" name="penghasilan" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label>Jumlah Tanggungan</label>
+                    <input type="number" name="tanggungan" class="form-control" required>
+                </div>
+
+                <button class="btn btn-success w-100">
+
+                    Daftar
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+    <br>
+
+    <a href="/menu" class="btn btn-secondary"> ← Kembali ke Dashboard </a>
+</body>
+
+</html>
